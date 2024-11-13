@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="todo.css">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1>LISTA DE TAREFAS</h1>
+    </header>
+
+    <!-- Seção principal de tarefas -->
+    <main class="task-container">
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa...">
+            <select id="priority">
+                <option value="alta">Alta</option>
+                <option value="media">Média</option>
+                <option value="pequena">Pequena</option>
+            </select>
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+
+        <!-- Lista de tarefas -->
+        <div class="task-list">
+            <ul id="taskList"></ul>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Desenvolvido por João Henrique - <a href="https://github.com/fdalmoro/fdalmoro" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="todo.js"></script>
+</body>
+</html>

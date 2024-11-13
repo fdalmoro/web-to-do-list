@@ -1,0 +1,136 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F2F2;
+    color: #2C3E3B;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    background-color: #4A5A58;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Rodapé fixo no fim da tela */
+.footer {
+    width: 100%;
+    background-color: #4A5A58;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer a {
+    color: #DADADA;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #A3AE8B;
+}
+
+/* Container principal de tarefas */
+.task-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border: 2px solid #2C3E3B; /* Borda verde escura */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px; /* Para evitar que o rodapé sobreponha o conteúdo */
+}
+
+/* Seção de entrada de tarefa */
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+#priority {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #2C3E3B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1F2C28;
+}
+
+/* Lista de tarefas */
+.task-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2C3E3B;
+}
+
+/* Prioridades em tons pastéis */
+.alta { background-color: #F9E2E2; }
+.media { background-color: #FAF2E0; }
+.pequena { background-color: #E2F9E2; }
+
+/* Estilos das ações */
+.task-actions button {
+    margin-left: 5px;
+    background-color: #2C3E3B;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.task-actions button:hover {
+    background-color: #1F2C28;
+}
+
+.task-actions i {
+    width: 16px;
+    height: 16px;
+}
