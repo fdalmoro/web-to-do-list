@@ -136,8 +136,8 @@ button:hover {
 }
 /* Estilos para a imagem do logo */
 .logo {
-    width: 40px;  /* Ajuste o tamanho conforme necessário */
+    width: 80px;  /* Ajuste o tamanho conforme necessário */
     height: auto;
     vertical-align: middle;
-    margin-right: 10px;  /* Espaço entre a imagem e o título */
+    margin-right: 50px;  /* Espaço entre a imagem e o título */
 }
